@@ -4,7 +4,7 @@
 
 ![Animated Obsidian callouts example .gif](animated-obsidian-callouts-example.gif)
 
-# How to use
+## How to use
 
 To use the CSS snippet, follow these steps:
 
@@ -13,3 +13,7 @@ To use the CSS snippet, follow these steps:
 3. In the snippets folder, copy in [animated-callouts.css](animated-callouts.css).
 4. In Obsidian, under **Appearance → CSS snippets**, select **Reload snippets** (refresh icon) to see the snippet in the list.
 5. Enable the toggle to the right of **animated-callouts**.
+
+## Miscellaneous
+
+- [Obsidian Sync](https://obsidian.md/sync) does not currently sync CSS snippets.
