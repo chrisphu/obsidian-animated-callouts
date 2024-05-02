@@ -1,0 +1,75 @@
+/**
+ * Chris Phu
+ *
+ * Following idiomatic-css style guide at https://github.com/necolas/idiomatic-css. 
+ * Properties are further grouped according to Chromium inspector
+ */
+
+/* ================================================================================
+   OBSIDIAN CSS VARIABLES
+   ================================================================================ */
+
+/**
+ * These CSS variables are intrinsically defined by Obsidian. The documentation for
+ * these variables are located at https://docs.obsidian.md/Reference/CSS+variables/CSS+variables
+ */
+
+body { --callout-radius: 0.5em; }
+
+/* ================================================================================
+   CALLOUTS
+   ================================================================================ */
+
+/* Overall callout
+   ================================================================================ */
+
+div.callout {
+    /* Appearance */
+    border-bottom-left-radius: 0;
+    border-color: rgb(var(--callout-color));
+    border-left-width: 4px;
+    border-style: solid;
+    border-top-left-radius: 0;
+}
+
+/* Callout content and title
+   ================================================================================ */
+
+/**
+ * Padding on both content and title adjusted to create more whitespace on left for icon
+ */
+
+div.callout-content { padding-left: 1.5em; }
+div.callout-title-inner { padding-left: 0; }
+
+/* New callout icon animation
+   ================================================================================ */
+
+@keyframes callout-icon-animation {
+    0% { transform: rotate(0) scale(1); }
+    15% { transform: rotate(15deg) scale(1.2); }
+    30% { transform: rotate(-15deg) scale(1.2); }
+    45% { transform: rotate(0) scale(1); }
+    100% { transform: rotate(0) scale(1); }
+}
+
+/* Callout icon
+   ================================================================================ */
+
+/**
+ * Icon moved over further left rather than being at the beginning of the callout title
+ */
+
+div.callout-icon svg {
+    /* Layout */
+    height: 20px;
+    left: -0.625em;
+    position: relative;
+    width: 20px;
+
+    /* Animation */
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: callout-icon-animation;
+    animation-timing-function: ease-in-out;
+}
