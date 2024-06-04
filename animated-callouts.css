@@ -1,27 +1,28 @@
 /**
- * Chris Phu
+ * Copyright © 2024 Chris Phu
+ * https://github.com/chrisphu/animated-obsidian-callouts/blob/main/LICENSE
  *
- * Following idiomatic-css style guide at https://github.com/necolas/idiomatic-css. 
- * Properties are further grouped according to Chromium inspector
+ * Following idiomatic-css style guide at https://github.com/necolas/idiomatic-css. Properties are further grouped
+ * according to Chromium inspector.
  */
 
-/* ================================================================================
+/* ==================================================================================================================
    OBSIDIAN CSS VARIABLES
-   ================================================================================ */
+   ================================================================================================================== */
 
 /**
- * These CSS variables are intrinsically defined by Obsidian. The documentation for
- * these variables are located at https://docs.obsidian.md/Reference/CSS+variables/CSS+variables
+ * These CSS variables are intrinsically defined by Obsidian. The documentation for these variables are located at
+ * https://docs.obsidian.md/Reference/CSS+variables/CSS+variables
  */
 
 body { --callout-radius: 0.5em; }
 
-/* ================================================================================
+/* ==================================================================================================================
    CALLOUTS
-   ================================================================================ */
+   ================================================================================================================== */
 
 /* Overall callout
-   ================================================================================ */
+   ================================================================================================================== */
 
 div.callout {
     /* Appearance */
@@ -33,17 +34,17 @@ div.callout {
 }
 
 /* Callout content and title
-   ================================================================================ */
+   ================================================================================================================== */
 
 /**
- * Padding on both content and title adjusted to create more whitespace on left for icon
+ * Padding on both content and title adjusted to create more whitespace on left for icon.
  */
 
 div.callout-content { padding-left: 1.5em; }
 div.callout-title-inner { padding-left: 0; }
 
 /* New callout icon animation
-   ================================================================================ */
+   ================================================================================================================== */
 
 @keyframes callout-icon-animation {
     0% { transform: rotate(0) scale(1); }
@@ -54,10 +55,10 @@ div.callout-title-inner { padding-left: 0; }
 }
 
 /* Callout icon
-   ================================================================================ */
+   ================================================================================================================== */
 
 /**
- * Icon moved over further left rather than being at the beginning of the callout title
+ * Icon moved over further left rather than being at the beginning of the callout title.
  */
 
 div.callout-icon svg {
