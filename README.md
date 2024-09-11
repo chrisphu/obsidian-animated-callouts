@@ -1,4 +1,4 @@
-# Animated Obsidian callouts
+# Obsidian animated callouts
 
 [animated-callouts.css](animated-callouts.css) is an [Obsidian CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) that modifies the appearance of [callouts](https://help.obsidian.md/Editing+and+formatting/Callouts).
 
